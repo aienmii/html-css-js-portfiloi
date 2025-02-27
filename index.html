@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Anastasiia Bohatyr</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Anastasiia Bohatyr</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile.JPG" alt="Anastasiia Bohatyr profile picture" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">HI! I am</p>
+      <h1 class="title">Anastasiia</h1>
+      <p class="section_text_p2">
+        I am a student of ACS, passionate about technology and software
+        engineering
+      </p>
+      <div class="btn-container">
+        <button class="btn-color-2" onclick="window.open('./assets/Anastassia_Bohatyr_CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="social-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/anastasia-bohatyr-a08b62283'" />
+        <img src="./assets/github.png" alt="My GitHub" class="icon"
+          onclick="location.href='https://github.com/aienmii'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title_2">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/IMG_3167.JPG" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-detail-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              2nd year student of Applied Computer Science<br />Cracow
+              University of Technology
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/skills.png" alt="Skills icon" class="icon" />
+            <h3>Skills</h3>
+            <p class="section_text_p4">
+              Java, Python, C++, HTML, CSS, JavaScript, SQL, Git, Linux,
+              Agile, Scrum, Jira, Confluence
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m Anastasiia Bohatyr—a driven, adaptable, and creative mind
+            passionate about technology and innovation. I thrive on
+            challenges, quickly absorbing new information and turning it into
+            action. With strong leadership and communication skills, I bring
+            energy and vision to every project I take on. Beyond tech, I
+            embrace creativity through modeling, push my limits in sports, and
+            expand my knowledge through reading. Inspired by initiatives that
+            empower women in tech, I strive to make an impact in the industry.
+            I’m not just looking for work—I’m looking for opportunities to
+            grow, contribute, and create something extraordinary.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+
+  <section id="skills">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title_2">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>HTML</h3>
+              <p class="level">Experienced</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>CSS</h3>
+              <p class="level">Experienced</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>SASS</h3>
+              <p class="level">Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>JavaScript</h3>
+              <p class="level">Basic</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>WordPress</h3>
+              <p class="level">Basic</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>Java</h3>
+              <p>Basic</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>MySQL</h3>
+              <p>Experienced</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>MongoDB</h3>
+              <p>Basic</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+              <h3>C++</h3>
+              <p>Intermediate</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title_2">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="article-container">
+          <article clasa="project-container">
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="button-container">
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project1'">
+                GitHub
+              </button>
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project1'">
+                Live Demo
+              </button>
+            </div>
+          </article>
+          <article clasa="project-container">
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="button-container">
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project2'">
+                GitHub
+              </button>
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project2'">
+                Live Demo
+              </button>
+            </div>
+          </article>
+          <article clasa="project-container">
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="button-container">
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project3'">
+                GitHub
+              </button>
+              <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/aienmii/Project3'">
+                Live Demo
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:bohatyranastasiia@gmail.com">bohatyranastasiia@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/anastasiia-bohatyr-a08b62283/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Anastasiia Bohatyr. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
